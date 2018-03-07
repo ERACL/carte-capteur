@@ -1,4 +1,4 @@
-update=mar. 13 févr. 2018 16:54:57 CET
+update=mer. 07 mars 2018 21:48:27 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,5 +59,8 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
+LibName33=pic24fj128ga202
+LibName34=/home/vahrum/Documents/Centrale/PA/carte-capteur/kicad/conn_shield_1
+LibName35=/home/vahrum/Documents/Centrale/PA/carte-capteur/kicad/conn_shield_2
 [general]
 version=1
