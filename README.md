@@ -1,5 +1,5 @@
-Carte capteur
-=============
+Carte standard périphériques
+============================
 
-Carte capteur - Contient le code et la CAO KiCAD de la carte capteur
+Carte standard périphériques - Contient la CAO KiCAD de la carte pour les périphériques
 
