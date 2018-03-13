@@ -3,7 +3,7 @@
   (general
     (links 100)
     (no_connects 0)
-    (area 0 0 0 0)
+    (area 34.925 22.86 116.840001 96.584001)
     (thickness 1.6)
     (drawings 9)
     (tracks 298)
@@ -13,11 +13,18 @@
   )
 
   (page A4)
+  (title_block
+    (title "Carte standard périphériques - Robot 2A année 2018")
+    (rev vx.x)
+    (company "Centrale Lyon")
+    (comment 1 "Contcter G. CHARREAUX (chxguillaume@gmail.com)")
+  )
+
   (layers
-    (0 F.Cu signal hide)
-    (1 In1.Cu signal hide)
+    (0 F.Cu signal)
+    (1 In1.Cu signal)
     (2 In2.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)

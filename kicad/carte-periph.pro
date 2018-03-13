@@ -60,7 +60,7 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=pic24fj128ga202
-LibName34=/home/vahrum/Documents/Centrale/PA/carte-capteur/kicad/conn_shield_1
-LibName35=/home/vahrum/Documents/Centrale/PA/carte-capteur/kicad/conn_shield_2
+LibName34=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/conn_shield_1
+LibName35=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/conn_shield_2
 [general]
 version=1

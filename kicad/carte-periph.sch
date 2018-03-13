@@ -34,13 +34,12 @@ LIBS:valves
 LIBS:pic24fj128ga202
 LIBS:conn_shield_1
 LIBS:conn_shield_2
-LIBS:carte-capteur-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Carte contrôle moteurs 2A - 2018"
+Title "Carte standard périphériques"
 Date ""
 Rev "v1.x"
 Comp "Centrale Lyon"
