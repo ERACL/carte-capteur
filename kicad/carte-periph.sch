@@ -34,6 +34,7 @@ LIBS:valves
 LIBS:pic24fj128ga202
 LIBS:conn_shield_1
 LIBS:conn_shield_2
+LIBS:carte-periph-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -694,14 +695,6 @@ F 3 "" H 3200 3000 50  0001 C CNN
 $EndComp
 Text Label 3100 2650 0    60   ~ 0
 RA4
-Text Label 6650 850  0    60   ~ 0
-RB3
-Text Label 6650 1750 0    60   ~ 0
-RB2
-Text Label 7450 850  2    60   ~ 0
-I2C_CLK2
-Text Label 7450 1750 2    60   ~ 0
-I2C_DATA2
 Text Label 7050 2900 0    60   ~ 0
 RB4
 Text Label 7050 3000 0    60   ~ 0
@@ -723,39 +716,6 @@ RB14
 Text Label 9000 3000 2    60   ~ 0
 RB15
 $Comp
-L R R6
-U 1 1 5A9FF9E3
-P 6950 1500
-F 0 "R6" V 7030 1500 50  0000 C CNN
-F 1 "10k" V 6950 1500 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6880 1500 50  0001 C CNN
-F 3 "" H 6950 1500 50  0001 C CNN
-	1    6950 1500
-	-1   0    0    1   
-$EndComp
-$Comp
-L +3.3V #PWR025
-U 1 1 5A9FFBB6
-P 6900 1300
-F 0 "#PWR025" H 6900 1150 50  0001 C CNN
-F 1 "+3.3V" H 6900 1440 50  0000 C CNN
-F 2 "" H 6900 1300 50  0001 C CNN
-F 3 "" H 6900 1300 50  0001 C CNN
-	1    6900 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L R R5
-U 1 1 5A9FFC28
-P 6950 1100
-F 0 "R5" V 7030 1100 50  0000 C CNN
-F 1 "10k" V 6950 1100 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6880 1100 50  0001 C CNN
-F 3 "" H 6950 1100 50  0001 C CNN
-	1    6950 1100
-	-1   0    0    1   
-$EndComp
-$Comp
 L Conn_01x02 J9
 U 1 1 5AA00D03
 P 6050 3100
@@ -766,8 +726,6 @@ F 3 "" H 6050 3100 50  0001 C CNN
 	1    6050 3100
 	0    1    1    0   
 $EndComp
-Text Notes 6600 2000 0    60   ~ 0
-Bus I2C avec pull up pour les peripheriques
 $Comp
 L Conn_01x02 J8
 U 1 1 5AA03E25
@@ -1207,10 +1165,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 2650 3100 2650
 Wire Wire Line
-	6650 850  7450 850 
-Wire Wire Line
-	6650 1750 7450 1750
-Wire Wire Line
 	7600 2900 7050 2900
 Wire Wire Line
 	7600 3000 7050 3000
@@ -1230,25 +1184,6 @@ Wire Wire Line
 	8450 2900 9000 2900
 Wire Wire Line
 	8450 3000 9000 3000
-Wire Wire Line
-	6950 1250 6950 1350
-Wire Wire Line
-	6950 1300 6900 1300
-Connection ~ 6950 1300
-Wire Wire Line
-	6950 1650 6950 1750
-Connection ~ 6950 1750
-Wire Wire Line
-	6950 950  6950 850 
-Connection ~ 6950 850 
-Wire Notes Line
-	7550 650  7550 1900
-Wire Notes Line
-	7550 1900 6600 1900
-Wire Notes Line
-	6600 1900 6600 650 
-Wire Notes Line
-	6600 650  7550 650 
 Wire Wire Line
 	4050 2650 4750 2650
 Wire Wire Line
@@ -1393,4 +1328,26 @@ F 3 "" H 1650 6800 50  0001 C CNN
 	1    1650 6800
 	-1   0    0    1   
 $EndComp
+Wire Notes Line
+	6600 650  7550 650 
+Wire Notes Line
+	6600 1900 6600 650 
+Wire Notes Line
+	7550 1900 6600 1900
+Wire Notes Line
+	7550 650  7550 1900
+Wire Wire Line
+	6650 1750 7450 1750
+Wire Wire Line
+	6650 850  7450 850 
+Text Notes 6600 2000 0    60   ~ 0
+Bus I2C avec pull up pour les peripheriques
+Text Label 7450 1750 2    60   ~ 0
+I2C_DATA2
+Text Label 7450 850  2    60   ~ 0
+I2C_CLK2
+Text Label 6650 1750 0    60   ~ 0
+RB2
+Text Label 6650 850  0    60   ~ 0
+RB3
 $EndSCHEMATC
