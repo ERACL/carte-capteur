@@ -1,4 +1,4 @@
-update=mer. 07 mars 2018 21:48:27 CET
+update=mar. 10 avril 2018 10:29:32 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,8 +59,7 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=pic24fj128ga202
-LibName34=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/conn_shield_1
-LibName35=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/conn_shield_2
+LibName33=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/conn_periph
+LibName34=/home/vahrum/Documents/Centrale/PA/carte-periph/kicad/pic24fj128ga104
 [general]
 version=1
