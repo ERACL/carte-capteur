@@ -612,10 +612,6 @@ Text Label 4625 6275 2    60   ~ 0
 I2C_CLK1
 Text Label 4625 6425 2    60   ~ 0
 I2C_DATA1
-Text Label 4875 6275 0    60   ~ 0
-I2C_CLK1
-Text Label 4875 6425 0    60   ~ 0
-I2C_DATA1
 Text Notes 3875 6925 0    60   ~ 0
 I2C
 Text Notes 2125 6675 0    60   ~ 0
@@ -924,18 +920,14 @@ Wire Wire Line
 Wire Wire Line
 	9150 1800 8600 1800
 Wire Wire Line
-	3925 6275 4625 6275
+	3925 6275 5925 6275
 Wire Wire Line
-	3925 6425 4625 6425
-Wire Wire Line
-	4875 6425 5825 6425
+	3925 6425 5825 6425
 Wire Wire Line
 	5425 6425 5425 6525
 Wire Wire Line
 	5825 6425 5825 6525
 Connection ~ 5425 6425
-Wire Wire Line
-	4875 6275 5925 6275
 Wire Wire Line
 	5525 6275 5525 6525
 Wire Wire Line
@@ -984,8 +976,6 @@ Wire Wire Line
 Wire Wire Line
 	10700 900  10150 900 
 Wire Wire Line
-	9150 900  8150 900 
-Wire Wire Line
 	8550 1700 9150 1700
 Wire Wire Line
 	10150 1300 10700 1300
@@ -1007,8 +997,6 @@ Wire Wire Line
 	9150 1200 8600 1200
 Wire Wire Line
 	9150 1100 8600 1100
-Wire Wire Line
-	9150 1000 8600 1000
 Wire Wire Line
 	9150 1500 8600 1500
 Wire Wire Line
@@ -1072,41 +1060,6 @@ RB0
 Text Label 10700 2200 2    60   ~ 0
 RB1
 $Comp
-L +3.3V #PWR032
-U 1 1 5ABF9590
-P 8600 1000
-F 0 "#PWR032" H 8600 850 50  0001 C CNN
-F 1 "+3.3V" V 8600 1250 50  0000 C CNN
-F 2 "" H 8600 1000 50  0001 C CNN
-F 3 "" H 8600 1000 50  0001 C CNN
-	1    8600 1000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L LED D4
-U 1 1 5ABF9B18
-P 7600 900
-F 0 "D4" H 7600 1000 50  0000 C CNN
-F 1 "RED" H 7600 800 50  0000 C CNN
-F 2 "LEDs:LED_D3.0mm" H 7600 900 50  0001 C CNN
-F 3 "" H 7600 900 50  0001 C CNN
-	1    7600 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R5
-U 1 1 5ABF9B1E
-P 8000 900
-F 0 "R5" V 8080 900 50  0000 C CNN
-F 1 "470" V 8000 900 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7930 900 50  0001 C CNN
-F 3 "" H 8000 900 50  0001 C CNN
-	1    8000 900 
-	0    -1   -1   0   
-$EndComp
-Text Notes 8275 1350 2    60   ~ 0
-Pattes V34 et L1 reliées\nsi le shield a besoin \nd'un pic 44 pattes
-$Comp
 L Conn_periph U1
 U 1 1 5AC0490E
 P 9650 2750
@@ -1169,21 +1122,6 @@ F 3 "" H 8550 800 50  0001 C CNN
 	1    8550 800 
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	7850 900  7750 900 
-$Comp
-L GND #PWR037
-U 1 1 5AC05ACF
-P 7350 900
-F 0 "#PWR037" H 7350 650 50  0001 C CNN
-F 1 "GND" V 7350 700 50  0000 C CNN
-F 2 "" H 7350 900 50  0001 C CNN
-F 3 "" H 7350 900 50  0001 C CNN
-	1    7350 900 
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	7450 900  7350 900 
 $Comp
 L PIC24FJ128GA104 U2
 U 1 1 5ACBB66F
@@ -1484,4 +1422,6 @@ Wire Notes Line
 	6175 575  575  575 
 Wire Notes Line
 	575  575  575  4600
+NoConn ~ 9150 900 
+NoConn ~ 9150 1000
 $EndSCHEMATC
