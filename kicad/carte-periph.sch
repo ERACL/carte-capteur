@@ -40,8 +40,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Carte standard périphériques"
-Date ""
-Rev "v1.x"
+Date "2018-04-22"
+Rev "v1.0"
 Comp "Centrale Lyon"
 Comment1 ""
 Comment2 "Contacter G. CHARREAUX (chxguillaume@gmail.com)"

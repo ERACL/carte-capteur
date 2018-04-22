@@ -3,7 +3,7 @@
   (general
     (links 97)
     (no_connects 0)
-    (area 35.459999 23.394999 115.670001 95.985001)
+    (area 35.052 22.86 116.332001 96.584001)
     (thickness 1.6)
     (drawings 13)
     (tracks 442)
@@ -15,7 +15,8 @@
   (page A4)
   (title_block
     (title "Carte standard périphériques - Robot 2A année 2018")
-    (rev vx.x)
+    (date 2018-04-22)
+    (rev v1.0)
     (company "Centrale Lyon")
     (comment 1 "Contcter G. CHARREAUX (chxguillaume@gmail.com)")
   )
@@ -2177,7 +2178,7 @@
   (gr_arc (start 40.64 90.805) (end 40.64 95.885) (angle 90) (layer Edge.Cuts) (width 0.2))
   (gr_arc (start 40.64 28.575) (end 35.56 28.575) (angle 90) (layer Edge.Cuts) (width 0.2))
   (gr_arc (start 110.49 28.575) (end 110.49 23.495) (angle 90) (layer Edge.Cuts) (width 0.2))
-  (gr_text "Carte périphérique - Robot 2A 2018\nVersion x.x" (at 39.37 57.785 270) (layer F.SilkS)
+  (gr_text "Carte périphérique - Robot 2A 2018\nVersion 1.0" (at 39.37 57.785 270) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
 
