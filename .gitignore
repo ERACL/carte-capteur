@@ -20,4 +20,6 @@ _autosave-*
 *.xml
 *.csv
 
-kicad/export
+# Fichiers gerber
+*.gbr
+*.drl
